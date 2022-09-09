@@ -1,0 +1,25 @@
+.about__container {
+    display: flex;
+    gap: 30px;
+}
+
+.about__list {
+    display: flex;
+    gap: 30px;
+}
+
+.about__content {
+    max-width: 470px;
+}
+
+.about__subtitle {
+    margin-bottom: 20px;
+}
+
+.about__text {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--primary-txt_mod-light);
+    margin-bottom: 42px;
+}

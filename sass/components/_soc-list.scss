@@ -1,0 +1,30 @@
+.soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.soc-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--secondary-txt_mod-dark);
+    /* color: var(--secondary-txt_mod-light); */
+    /* transition: color 0.25s var(--transition-timing); */
+}
+
+.soc-list__icon {
+    transition: fill 0.25s var(--transition-timing);
+    fill: var(--secondary-txt_mod-light);
+
+    .soc-list__link:hover &,
+    .soc-list__link:focus & {
+        fill: var(--accent-color);
+    }
+}
+
+
+

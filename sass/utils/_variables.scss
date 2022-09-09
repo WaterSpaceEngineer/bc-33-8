@@ -1,0 +1,23 @@
+:root {
+    /* Colors */
+    --accent-color: #FF6C00;
+
+    /* Light theme */
+    --primary-txt_mod-light: #555555;
+    --secondary-txt_mod-light: #303030;
+    /* Dark theme */
+    --primary-txt_mod-darking: rgb(157, 164, 189, 0.6);
+    --primary-txt_mod-dark: #9DA4BD;
+    --secondary-txt_mod-dark: #ffffff;
+
+    /* Bg colors */
+    --primary-bg_mod-light: #F7F7F7;
+    --primary-bg_mod-dark: #191C26;
+    --secondary-bg-mod-light: #ffffff;
+
+    /* Fonts */
+    --main-font: 'Open Sans', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    --transition-timing : cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,146 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.page {
+    font-family: var(--main-font);
+    font-size: 18px;
+    line-height: 1.87;
+    letter-spacing: 0.02em;
+    color: var(--primary-txt_mod-dark);
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include min480 {
+        max-width: 448px;
+    }
+
+    @include min768 {
+        max-width: 720px;
+    }
+
+    @include min1200 {
+        max-width: 1200px;
+    }
+}
+
+.section {
+    padding-top: 84px;
+    padding-bottom: 84px;
+
+    @include min768 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @include min1200 {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.uppertitle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    margin-bottom: 20px;
+}
+
+.uppertitle::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+}
+
+.uppertitle-mod-dark {
+    color: var(--primary-txt_mod-darking);
+}
+
+.uppertitle-mod-light {
+    color: var(--secondary-txt_mod-light);
+}
+
+.title {
+    font-family: var(--secondary-font);
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.title-mod-light {
+    color: var(--secondary-txt_mod-light);
+    margin-bottom: 20px;
+}
+
+.title-mod-dark {
+    color: var(--secondary-txt_mod-dark);
+    margin-bottom: 44px;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+.subtitle-mod-light {
+    color: var(--primary-txt_mod-light);
+}
+
+.subtitle-mod-dark {
+    color: var(--primary-txt_mod-dark);
+}
+
+.address-normal {
+    font-style: normal;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

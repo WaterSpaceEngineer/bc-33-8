@@ -1,0 +1,17 @@
+.footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-copy {
+    color: var(--primary-txt_mod-dark);
+}

@@ -1,0 +1,48 @@
+.benefits-container {
+    display: flex;
+}
+
+.benefits-list {
+    color: var(--secondary-txt_mod-light);
+    width: calc(50% - 15px);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-right: 30px;
+}
+
+.benefits-item {
+    background-color: var(--primary-bg_mod-light);
+    width: 170px;
+    height: 134px;
+    text-align: center;
+    padding: 20px 24px;
+}
+
+.benefits-item:nth-child(odd) {
+    margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+    margin-top: 30px;
+}
+
+.benefits-num {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+}
+
+.benefits-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: normal;
+}
+
+.benefits-content {
+    max-width: 500px;
+}

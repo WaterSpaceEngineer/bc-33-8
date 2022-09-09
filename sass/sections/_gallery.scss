@@ -1,0 +1,26 @@
+.gallery-uppertitle.uppertitle-mod-light {
+    margin-bottom: 71px;
+
+    @include min768 {
+        margin-bottom: 44px;
+    }
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.gallery-item {
+    width: 100%;
+
+    @include min768 {
+        width: item-base(2, 30px);
+    }
+
+    @include min1200 {
+        width: item-base(4, 30px);
+    }
+    
+}

@@ -1,0 +1,28 @@
+.social-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.social-list::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: var(--secondary-txt_mod-light);
+}
+
+
+.social-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--secondary-txt_mod-light);
+    transition: color 0.25s var(--transition-timing);
+    text-transform: capitalize;
+}
+
+.social-link:hover,
+.social-link:focus {
+    color: var(--accent-color);
+}
