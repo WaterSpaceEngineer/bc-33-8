@@ -1,10 +1,11 @@
-.soc-list {
+
+.social-list {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.soc-list__link {
+.social-list__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,15 +17,21 @@
     /* transition: color 0.25s var(--transition-timing); */
 }
 
-.soc-list__icon {
+.social-list__icon {
     transition: fill 0.25s var(--transition-timing);
     fill: var(--secondary-txt_mod-light);
 
-    .soc-list__link:hover &,
-    .soc-list__link:focus & {
+    .social-list__link:hover &,
+    .social-list__link:focus & {
         fill: var(--accent-color);
     }
 }
 
+/* .social-list__link:hover,
+.social-list__link:focus {
+    color: var(--accent-color);
+}
 
-
+.social-list__icon {
+    fill: currentColor;
+} */

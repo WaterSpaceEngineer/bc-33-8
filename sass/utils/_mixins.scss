@@ -17,6 +17,12 @@
 	}
 }
 
+@mixin min480-max767 {
+	@media screen and (min-width: 480px) and (max-width: 767px) {
+		@content;
+	}
+}
+
 @mixin min768 {
 	@media screen and (min-width: 768px) {
 		@content;

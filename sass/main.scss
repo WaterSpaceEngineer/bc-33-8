@@ -1,28 +1,5 @@
 @use 'sass:math';
 
-@import './utils/normalize';
-
-
-@import './utils/placeholders';
-@import './utils/function';
-@import './utils/mixins';
-@import './utils/variables';
-@import './utils/base';
-
-
-@import './components/buttons';
-@import './components/social-list';
-@import './components/soc-list';
-
-
-
-@import './sections/header';
-@import './sections/hero';
-@import './sections/about';
-@import './sections/services';
-@import './sections/benefits';
-@import './sections/masters';
-@import './sections/gallery';
-@import './sections/contacts';
-@import './sections/footer';
-@import './sections/modal';
+@import './utils/utils';
+@import './componets/componets';
+@import './sections/sections';

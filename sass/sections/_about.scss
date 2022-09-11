@@ -3,20 +3,60 @@
     gap: 30px;
 }
 
-.about__list {
+.pic-list,
+.about__content {
+    @include min768 {
+        width: item-base(2, 30px);
+    }
+}
+
+.pic-list {
+    @include max767 {
+        display: none;
+    }
+
     display: flex;
     gap: 30px;
+
+    @include min768-max1199 {
+        flex-direction: column;
+    }
+}
+
+.pic-list__img {
+    object-fit: cover;
+
+    @include min768-max1199 {
+        width: 330px;
+        height: 235px;
+    }
+
+    @include min1200 {
+        width: 270px;
+        height: 445px;
+    }
 }
 
 .about__content {
     max-width: 470px;
 }
 
-.about__subtitle {
+.about-content__subtitle {
     margin-bottom: 20px;
+
+    @include max767 {
+        font-size: 16px;
+        line-height: lh(26,16);
+    }
 }
 
-.about__text {
+.about__title {
+    @include max1199 {
+        font-size: 28px;
+    }
+}
+
+.about-content__text {
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;

@@ -19,21 +19,23 @@
 .btn-mod-dark {
     color: var(--secondary-txt_mod-dark);
     transition: color 0.25s var(--transition-timing), background-color 0.25s var(--transition-timing);
-}
 
-.btn-mod-dark:hover,
-.btn-mod-dark:focus {
-    border-color: transparent;
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        border-color: transparent;
+    }
 }
 
 .btn-mod-light {
     color: var(--secondary-txt_mod-light);
     transition: color 0.25s var(--transition-timing);
+
+    &:hover,
+    &:focus {
+        color: var(--secondary-txt_mod-dark);
+        background-color: var(--accent-color);
+        border-color: transparent;
+    }
 }
 
-.btn-mod-light:hover,
-.btn-mod-light:focus {
-    color: var(--secondary-txt_mod-dark);
-    background-color: var(--accent-color);
-    border-color: transparent;
-}

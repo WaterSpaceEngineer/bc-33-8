@@ -1,18 +1,19 @@
-.gallery-uppertitle.uppertitle-mod-light {
+.gallery__uppertitle.uppertitle--color-light {
     margin-bottom: 71px;
-
+    
     @include min768 {
         margin-bottom: 44px;
     }
+
 }
 
-.gallery-list {
+.gallery__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.gallery-item {
+.gallery__item {
     width: 100%;
 
     @include min768 {
@@ -22,5 +23,4 @@
     @include min1200 {
         width: item-base(4, 30px);
     }
-    
 }

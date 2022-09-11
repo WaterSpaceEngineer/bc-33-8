@@ -1,13 +1,17 @@
+/* Reset CSS */
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
 img {
     display: block;
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
     height: auto;
 }
+
+/* Common styles */
 
 html {
     scroll-behavior: smooth;
@@ -32,8 +36,8 @@ html {
         max-width: 448px;
     }
 
-    @include min768 {
-        max-width: 720px;
+    @include min768-max1199 {
+        max-width: 705px;
     }
 
     @include min1200 {
@@ -42,10 +46,12 @@ html {
 }
 
 .section {
-    padding-top: 84px;
-    padding-bottom: 84px;
+    @include max767 {
+        padding-top: 84px;
+        padding-bottom: 84px;
+    }
 
-    @include min768 {
+    @include min768-max1199 {
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -55,7 +61,6 @@ html {
         padding-bottom: 120px;
     }
 }
-
 
 .link {
     text-decoration: none;
@@ -87,43 +92,50 @@ html {
     background-color: currentColor;
 }
 
-.uppertitle-mod-dark {
+.uppertitle--color-dark {
     color: var(--primary-txt_mod-darking);
 }
 
-.uppertitle-mod-light {
+.uppertitle--color-light {
     color: var(--secondary-txt_mod-light);
 }
 
 .title {
     font-family: var(--secondary-font);
-    font-size: 42px;
+    font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.05em;
+
+    @include min768 {
+        font-size: 42px;
+    }
 }
 
-.title-mod-light {
+.title--color-light {
     color: var(--secondary-txt_mod-light);
     margin-bottom: 20px;
 }
 
-.title-mod-dark {
+.title--color-dark {
     color: var(--secondary-txt_mod-dark);
     margin-bottom: 44px;
 }
 
 .subtitle {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.67;
-    letter-spacing: 0.02em;
+    
+    @include min768 {
+        font-size: 18px;
+    }
 }
 
-.subtitle-mod-light {
+.subtitle--color-light {
     color: var(--primary-txt_mod-light);
 }
 
-.subtitle-mod-dark {
+.subtitle--color-dark {
     color: var(--primary-txt_mod-dark);
 }
 
